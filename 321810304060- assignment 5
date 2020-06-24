@@ -1,0 +1,144 @@
+1.write a python program to find area of circle using math function?
+
+In [1]:
+import math
+r=float(input("enter the radius of the circle:"))
+area=math.pi* r * r
+print(area)
+enter the radius of the circle:2
+12.566370614359172
+
+2.write a program to find area of regular polygon using math function?
+
+In [2]:
+from math import tan,pi
+n=int(input("input number of sides: "))
+length=float(input("input the length of a side: "))
+area=n * (length**2) / (4 * tan(pi / n))
+print("the area of the polygon is: ",area)
+input number of sides: 5
+input the length of a side: 15
+the area of the polygon is:  387.1074151325176
+
+3.write a program to find area of a segment of a circle formula using math function?
+
+In [10]:
+import math
+def segmentarea(r,angle):
+    areaofsector = pi * (r * r) * (angle / 360)
+    areaoftriangle = 1 / 2 *(r * r) *math.sin((angle * pi) / 180)
+    return areaofsector - areaoftriangle;
+r=int(input("enter the radius:"))
+angle=int(input("enter the angle"))
+print("area of minor segement=" ,segmentarea(r ,angle))
+print("area of major segement=" ,segmentarea(r , (360-angle)))
+enter the radius:20
+enter the angle60
+area of minor segement= 36.23442948243181
+area of major segement= 1220.4026319534855
+
+4.write a python program to shuffle list |1=[100,1,2,3,30,40,"hai","hello"]?
+
+In [11]:
+from random import shuffle
+|1=[100,1,2,3,30,40,"hai","hello"]
+shuffle(|1)
+print(|1)
+  File "<ipython-input-11-ad607103174a>", line 2
+    |1=[100,1,2,3,30,40,"hai","hello"]
+    ^
+SyntaxError: invalid syntax
+
+5.write a program to generate random numbers between 1,10000 and difference between each random number is 50?
+
+In [14]:
+import random
+n= random.randint(1,1000)
+print(n)
+
+while(n<1000):
+    n=n+50
+    print(n)
+270
+320
+370
+420
+470
+520
+570
+620
+670
+720
+770
+820
+870
+920
+970
+1020
+
+6.write a python program by using math module to find?
+
+a.sin60
+
+In [15]:
+import math
+sine=math.sin(60)
+print(sine)
+-0.3048106211022167
+b.cos(pi)
+
+In [16]:
+import math
+co=math.cos(pi)
+print(co)
+-1.0
+c.tan(90)
+
+In [17]:
+import math
+ta=math.tan(90)
+print(ta)
+-1.995200412208242
+d.angle of sin(0.8660254037844386)
+
+In [19]:
+import math
+
+print(math.sin((0.86602540378443860009)))
+0.7617599814162892
+e.5^8
+
+In [20]:
+print(5**8)
+390625
+f.square root of 400
+
+In [21]:
+print(400**0.5)
+20.0
+g.the value of 5^e
+
+In [23]:
+import math
+print(5*(math.e))
+13.591409142295225
+h.the value of log(1024),base 2
+
+In [24]:
+import math
+print(math.log2(1024))
+10.0
+i.the value of log(1024),base10
+
+In [25]:
+import math
+print(math.log10(1024))
+3.010299956639812
+j.the floor and celling value of 23.56
+
+In [26]:
+import math
+print(math.floor(23.56))
+print(math.ceil(23.56))
+23
+24
